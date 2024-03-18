@@ -6,13 +6,13 @@
   <li><a href="eventoscontrolar.html">Eventos</a></li>
 <?php 
 //Menu só aparece para os administradores.
-//if($_SESSION['acesso']=="Admin"){
+if($_SESSION['acesso']=="Admin"){
     echo "<li class='dropdown'><a href='javascript:void(0)' class='dropbtn'>Administração do Site</a>";
 	echo "<div class='dropdown-content'><a href='usuariosrelatorio.php'>Relatório de Usuários</a><a href='usuariosrelatoriojs.php'>Gráfico Controle JS</a><a href='usuarioscontrolar.php?pag=1'>Controlar Usuários</a><a href='usuariocadastrartela.php'>Cadastrar Usuário</a></div></li>";
-//}  
+}  
 ?>
   <li class="dropdown" style="float:right">
-    <a href="javascript:void(0)" class="dropbtn">Usuário: <?php //echo $logado;?></a>
+    <a href="javascript:void(0)" class="dropbtn">Usuário: <?php echo $logado;?></a>
     <div class="dropdown-content">
       <a href="usuarioeditarformcomum.php">Alterar Dados</a>
       <a href="#">Alterar Senha</a>

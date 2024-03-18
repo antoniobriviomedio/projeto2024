@@ -2,11 +2,11 @@
 session_start();
 
 //Verifica se o usuário logou.
-//require 'acessocomum.php';
+require 'acessocomum.php';
 
 //Cria variáveis com a sessão.
-//$logado = $_SESSION['nome'];
-//$acesso = $_SESSION['acesso'];
+$logado = $_SESSION['nome'];
+$acesso = $_SESSION['acesso'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

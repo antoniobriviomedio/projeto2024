@@ -1,4 +1,6 @@
 <?php
+//Inicia a sessão
+session_start();
 
 //Se o usuário não usou o formulário
 if (!isset($_POST['senha'])){
@@ -35,8 +37,6 @@ try
 			if($verificado){			
 				$_SESSION['nome'] = $row["nome"];
 				$_SESSION['acesso'] = $row["acesso"];
-				$_SESSION['id'] = $row["id"];
-				$_SESSION['email'] = $row["email"];				
 				header('Location: principal.php');
 				exit;
 			}else{

@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+//Verifica se o usuário logou.
+require 'acessoadm.php';
+
 //Insere o arquivo de conexão
 require('conexao.php');
 
