@@ -1,9 +1,6 @@
 <ul>
   <li><a href="principal.php">Principal</a></li>
   <li><a href="turmascontrolar.php">Turmas</a></li>
-  <li><a href="turmascontrolarjoin.php">Turmas Join</a></li>
-  <li><a href="turmascontrolarjs.php">Turmas Controle JS e PDF</a></li>
-  <li><a href="eventoscontrolar.html">Eventos</a></li>
 <?php 
 //Menu só aparece para os administradores.
 if($_SESSION['acesso']=="Admin"){

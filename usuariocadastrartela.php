@@ -36,7 +36,7 @@ require 'acessoadm.php';
   <input type="password" id="lname" name="senha">
   
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Inserir">
 </form> 
 
 </body>

@@ -43,6 +43,14 @@ $result->bindParam(":validador", $validador);
 //Executa o SQL	
 $result->execute();
 
+//Envie email para validar a conta.
+require 'enviaremail.php';  
+
+//Conteúdo do email de validação
+$texto = "Clique <a href='aulahtmlcss.000webhostapp.com/usuariovalidaremail.php?id=" . $email . "&validador=" . $validador . "'>aqui</a>.";
+
+enviaremail($camponome, $campoemail, 'Validar conta', $texto);
+
 //Escreve na tela em caso de sucesso
   echo "Usuário Criado";
   
